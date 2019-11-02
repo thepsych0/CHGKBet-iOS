@@ -1,0 +1,6 @@
+framework module Pods_CHGKBet {
+  umbrella header "Pods-CHGKBet-umbrella.h"
+
+  export *
+  module * { export * }
+}

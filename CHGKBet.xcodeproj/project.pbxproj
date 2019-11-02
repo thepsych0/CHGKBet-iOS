@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D70A4CA82363B375003762EA /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70A4CA72363B375003762EA /* BaseAPI.swift */; };
+		D70A4CAA2363B41F003762EA /* LineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70A4CA92363B41F003762EA /* LineAPI.swift */; };
+		D75514E923648DFA00294992 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514E823648DFA00294992 /* GameInfo.swift */; };
+		D75514ED2364E73D00294992 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514EC2364E73D00294992 /* Event.swift */; };
+		D75514F12364EB4000294992 /* EventOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514EF2364EB4000294992 /* EventOptionCell.swift */; };
+		D75514F22364EB4000294992 /* EventOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75514F02364EB4000294992 /* EventOptionCell.xib */; };
+		D75514F52365A67800294992 /* BettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514F42365A67800294992 /* BettingViewController.swift */; };
+		D75514F8236B7DDF00294992 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514F7236B7DDF00294992 /* ArrayExtensions.swift */; };
+		D75514FA236B7DF800294992 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514F9236B7DF800294992 /* UIExtensions.swift */; };
+		D75514FC236B7E4D00294992 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75514FB236B7E4D00294992 /* StringExtensions.swift */; };
+		D75514FE236B80FF00294992 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75514FD236B80FF00294992 /* Authorization.storyboard */; };
+		D7551506236B85D900294992 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7551505236B85D900294992 /* User.swift */; };
+		D755150A236CA83F00294992 /* Preparation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7551509236CA83F00294992 /* Preparation.storyboard */; };
+		D755150D236CA87A00294992 /* PreparatioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D755150C236CA87A00294992 /* PreparatioPresenter.swift */; };
+		D755150F236CA89200294992 /* PreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D755150E236CA89200294992 /* PreparationViewController.swift */; };
+		D7551511236CA91400294992 /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7551510236CA91400294992 /* UsersAPI.swift */; };
+		D7551513236CA9A300294992 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7551512236CA9A300294992 /* UsersService.swift */; };
+		D75E6ADA23645FFE0038BB73 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6AD923645FFE0038BB73 /* Tournament.swift */; };
+		D75E6ADC236460990038BB73 /* LineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E6ADB236460990038BB73 /* LineService.swift */; };
+		D768EEF2235FB02C00FAE11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EEF1235FB02C00FAE11C /* AppDelegate.swift */; };
+		D768EEF4235FB02C00FAE11C /* TournamentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EEF3235FB02C00FAE11C /* TournamentsViewController.swift */; };
+		D768EEF7235FB02C00FAE11C /* Line.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768EEF5235FB02C00FAE11C /* Line.storyboard */; };
+		D768EEF9235FB02F00FAE11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D768EEF8235FB02F00FAE11C /* Assets.xcassets */; };
+		D768EEFC235FB02F00FAE11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D768EEFA235FB02F00FAE11C /* LaunchScreen.storyboard */; };
+		D768EF05235FB1BA00FAE11C /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EF04235FB1BA00FAE11C /* Bet.swift */; };
+		D768EF0B235FB68100FAE11C /* TournamentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EF09235FB68100FAE11C /* TournamentCell.swift */; };
+		D768EF0C235FB68100FAE11C /* TournamentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D768EF0A235FB68100FAE11C /* TournamentCell.xib */; };
+		D768EF102360E0D100FAE11C /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EF0E2360E0D100FAE11C /* GameCell.swift */; };
+		D768EF112360E0D100FAE11C /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D768EF0F2360E0D100FAE11C /* GameCell.xib */; };
+		D768EF142360E0EF00FAE11C /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EF132360E0EF00FAE11C /* GamesViewController.swift */; };
+		D768EF172360E7CE00FAE11C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D768EF162360E7CE00FAE11C /* EventsViewController.swift */; };
+		D7B5C21F236CC95C005F1A42 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5C21E236CC95C005F1A42 /* AuthorizationPresenter.swift */; };
+		D7B5C222236CC99A005F1A42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5C221236CC99A005F1A42 /* LoginViewController.swift */; };
+		D7B5C226236CD963005F1A42 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5C225236CD963005F1A42 /* KeychainService.swift */; };
+		D7E5861E236472E8001B33C9 /* LinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E5861D236472E8001B33C9 /* LinePresenter.swift */; };
+		E8AD897C0C40171CFD726ABE /* Pods_CHGKBet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331563CA53975EC3C1AB8F87 /* Pods_CHGKBet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CB24561E063D269E40B10BA /* Pods-CHGKBet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHGKBet.release.xcconfig"; path = "Target Support Files/Pods-CHGKBet/Pods-CHGKBet.release.xcconfig"; sourceTree = "<group>"; };
+		331563CA53975EC3C1AB8F87 /* Pods_CHGKBet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHGKBet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3229A2135E1683358FEF591 /* Pods-CHGKBet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHGKBet.debug.xcconfig"; path = "Target Support Files/Pods-CHGKBet/Pods-CHGKBet.debug.xcconfig"; sourceTree = "<group>"; };
+		D70A4CA72363B375003762EA /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		D70A4CA92363B41F003762EA /* LineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineAPI.swift; sourceTree = "<group>"; };
+		D75514E823648DFA00294992 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		D75514EC2364E73D00294992 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D75514EF2364EB4000294992 /* EventOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOptionCell.swift; sourceTree = "<group>"; };
+		D75514F02364EB4000294992 /* EventOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventOptionCell.xib; sourceTree = "<group>"; };
+		D75514F42365A67800294992 /* BettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingViewController.swift; sourceTree = "<group>"; };
+		D75514F7236B7DDF00294992 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		D75514F9236B7DF800294992 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		D75514FB236B7E4D00294992 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D75514FD236B80FF00294992 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		D7551505236B85D900294992 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D7551509236CA83F00294992 /* Preparation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preparation.storyboard; sourceTree = "<group>"; };
+		D755150C236CA87A00294992 /* PreparatioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparatioPresenter.swift; sourceTree = "<group>"; };
+		D755150E236CA89200294992 /* PreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewController.swift; sourceTree = "<group>"; };
+		D7551510236CA91400294992 /* UsersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
+		D7551512236CA9A300294992 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		D75E6AD923645FFE0038BB73 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		D75E6ADB236460990038BB73 /* LineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineService.swift; sourceTree = "<group>"; };
+		D768EEEE235FB02C00FAE11C /* CHGKBet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHGKBet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D768EEF1235FB02C00FAE11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D768EEF3235FB02C00FAE11C /* TournamentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsViewController.swift; sourceTree = "<group>"; };
+		D768EEF6235FB02C00FAE11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Line.storyboard; sourceTree = "<group>"; };
+		D768EEF8235FB02F00FAE11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D768EEFB235FB02F00FAE11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D768EEFD235FB02F00FAE11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D768EF04235FB1BA00FAE11C /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		D768EF09235FB68100FAE11C /* TournamentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentCell.swift; sourceTree = "<group>"; };
+		D768EF0A235FB68100FAE11C /* TournamentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TournamentCell.xib; sourceTree = "<group>"; };
+		D768EF0E2360E0D100FAE11C /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		D768EF0F2360E0D100FAE11C /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		D768EF132360E0EF00FAE11C /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		D768EF162360E7CE00FAE11C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		D7B5C21E236CC95C005F1A42 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		D7B5C221236CC99A005F1A42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7B5C225236CD963005F1A42 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		D7E5861D236472E8001B33C9 /* LinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D768EEEB235FB02C00FAE11C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AD897C0C40171CFD726ABE /* Pods_CHGKBet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21920FB1E02EF2750DC05CF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				331563CA53975EC3C1AB8F87 /* Pods_CHGKBet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5876C58A896C2A2C23FF8306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3229A2135E1683358FEF591 /* Pods-CHGKBet.debug.xcconfig */,
+				1CB24561E063D269E40B10BA /* Pods-CHGKBet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D70A4CA62363B34C003762EA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D70A4CA72363B375003762EA /* BaseAPI.swift */,
+				D70A4CA92363B41F003762EA /* LineAPI.swift */,
+				D75E6ADB236460990038BB73 /* LineService.swift */,
+				D7551510236CA91400294992 /* UsersAPI.swift */,
+				D7551512236CA9A300294992 /* UsersService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D75514EE2364EAE300294992 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D75514EF2364EB4000294992 /* EventOptionCell.swift */,
+				D75514F02364EB4000294992 /* EventOptionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D75514F32365A60F00294992 /* Betting */ = {
+			isa = PBXGroup;
+			children = (
+				D75514F42365A67800294992 /* BettingViewController.swift */,
+			);
+			path = Betting;
+			sourceTree = "<group>";
+		};
+		D75514F6236B6B9A00294992 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D75514F7236B7DDF00294992 /* ArrayExtensions.swift */,
+				D75514F9236B7DF800294992 /* UIExtensions.swift */,
+				D75514FB236B7E4D00294992 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D755150B236CA85E00294992 /* Preparation */ = {
+			isa = PBXGroup;
+			children = (
+				D7551509236CA83F00294992 /* Preparation.storyboard */,
+				D755150C236CA87A00294992 /* PreparatioPresenter.swift */,
+				D755150E236CA89200294992 /* PreparationViewController.swift */,
+			);
+			path = Preparation;
+			sourceTree = "<group>";
+		};
+		D768EEE5235FB02C00FAE11C = {
+			isa = PBXGroup;
+			children = (
+				D768EEF0235FB02C00FAE11C /* CHGKBet */,
+				D768EEEF235FB02C00FAE11C /* Products */,
+				5876C58A896C2A2C23FF8306 /* Pods */,
+				21920FB1E02EF2750DC05CF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D768EEEF235FB02C00FAE11C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D768EEEE235FB02C00FAE11C /* CHGKBet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D768EEF0235FB02C00FAE11C /* CHGKBet */ = {
+			isa = PBXGroup;
+			children = (
+				D768EEFD235FB02F00FAE11C /* Info.plist */,
+				D7B5C223236CD92C005F1A42 /* App */,
+				D768EF06235FB1FF00FAE11C /* Views */,
+				D768EF03235FB19E00FAE11C /* Models */,
+				D70A4CA62363B34C003762EA /* Networking */,
+				D7B5C224236CD947005F1A42 /* Services */,
+				D75514F6236B6B9A00294992 /* Extensions */,
+			);
+			path = CHGKBet;
+			sourceTree = "<group>";
+		};
+		D768EF03235FB19E00FAE11C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D768EF04235FB1BA00FAE11C /* Bet.swift */,
+				D75E6AD923645FFE0038BB73 /* Tournament.swift */,
+				D75514E823648DFA00294992 /* GameInfo.swift */,
+				D75514EC2364E73D00294992 /* Event.swift */,
+				D7551505236B85D900294992 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D768EF06235FB1FF00FAE11C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D755150B236CA85E00294992 /* Preparation */,
+				D7B5C220236CC966005F1A42 /* Authorization */,
+				D78918C523647C3700ECA90A /* Line */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D768EF07235FB22200FAE11C /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				D768EEF3235FB02C00FAE11C /* TournamentsViewController.swift */,
+				D768EF08235FB66100FAE11C /* Cells */,
+			);
+			path = Tournaments;
+			sourceTree = "<group>";
+		};
+		D768EF08235FB66100FAE11C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D768EF09235FB68100FAE11C /* TournamentCell.swift */,
+				D768EF0A235FB68100FAE11C /* TournamentCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D768EF0D2360E05500FAE11C /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				D768EF132360E0EF00FAE11C /* GamesViewController.swift */,
+				D768EF122360E0D400FAE11C /* Cells */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		D768EF122360E0D400FAE11C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D768EF0E2360E0D100FAE11C /* GameCell.swift */,
+				D768EF0F2360E0D100FAE11C /* GameCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D768EF152360E7A500FAE11C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D768EF162360E7CE00FAE11C /* EventsViewController.swift */,
+				D75514EE2364EAE300294992 /* Cells */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		D78918C523647C3700ECA90A /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				D768EEF5235FB02C00FAE11C /* Line.storyboard */,
+				D7E5861D236472E8001B33C9 /* LinePresenter.swift */,
+				D768EF07235FB22200FAE11C /* Tournaments */,
+				D768EF0D2360E05500FAE11C /* Games */,
+				D768EF152360E7A500FAE11C /* Events */,
+				D75514F32365A60F00294992 /* Betting */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		D7B5C220236CC966005F1A42 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				D75514FD236B80FF00294992 /* Authorization.storyboard */,
+				D7B5C21E236CC95C005F1A42 /* AuthorizationPresenter.swift */,
+				D7B5C221236CC99A005F1A42 /* LoginViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		D7B5C223236CD92C005F1A42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D768EEF1235FB02C00FAE11C /* AppDelegate.swift */,
+				D768EEFA235FB02F00FAE11C /* LaunchScreen.storyboard */,
+				D768EEF8235FB02F00FAE11C /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D7B5C224236CD947005F1A42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7B5C225236CD963005F1A42 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D768EEED235FB02C00FAE11C /* CHGKBet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D768EF00235FB02F00FAE11C /* Build configuration list for PBXNativeTarget "CHGKBet" */;
+			buildPhases = (
+				6B4BA29921A8EA0DD7E2F046 /* [CP] Check Pods Manifest.lock */,
+				D768EEEA235FB02C00FAE11C /* Sources */,
+				D768EEEB235FB02C00FAE11C /* Frameworks */,
+				D768EEEC235FB02C00FAE11C /* Resources */,
+				DA8A72B3EBA731A88EDC1A5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHGKBet;
+			productName = CHGKBet;
+			productReference = D768EEEE235FB02C00FAE11C /* CHGKBet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D768EEE6235FB02C00FAE11C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = thepsych0;
+				TargetAttributes = {
+					D768EEED235FB02C00FAE11C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D768EEE9235FB02C00FAE11C /* Build configuration list for PBXProject "CHGKBet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D768EEE5235FB02C00FAE11C;
+			productRefGroup = D768EEEF235FB02C00FAE11C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D768EEED235FB02C00FAE11C /* CHGKBet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D768EEEC235FB02C00FAE11C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D768EF112360E0D100FAE11C /* GameCell.xib in Resources */,
+				D768EF0C235FB68100FAE11C /* TournamentCell.xib in Resources */,
+				D755150A236CA83F00294992 /* Preparation.storyboard in Resources */,
+				D768EEFC235FB02F00FAE11C /* LaunchScreen.storyboard in Resources */,
+				D768EEF9235FB02F00FAE11C /* Assets.xcassets in Resources */,
+				D75514FE236B80FF00294992 /* Authorization.storyboard in Resources */,
+				D768EEF7235FB02C00FAE11C /* Line.storyboard in Resources */,
+				D75514F22364EB4000294992 /* EventOptionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B4BA29921A8EA0DD7E2F046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHGKBet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8A72B3EBA731A88EDC1A5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHGKBet/Pods-CHGKBet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHGKBet/Pods-CHGKBet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHGKBet/Pods-CHGKBet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D768EEEA235FB02C00FAE11C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7551513236CA9A300294992 /* UsersService.swift in Sources */,
+				D768EF102360E0D100FAE11C /* GameCell.swift in Sources */,
+				D7E5861E236472E8001B33C9 /* LinePresenter.swift in Sources */,
+				D755150F236CA89200294992 /* PreparationViewController.swift in Sources */,
+				D75514F52365A67800294992 /* BettingViewController.swift in Sources */,
+				D75514FA236B7DF800294992 /* UIExtensions.swift in Sources */,
+				D768EF0B235FB68100FAE11C /* TournamentCell.swift in Sources */,
+				D7B5C21F236CC95C005F1A42 /* AuthorizationPresenter.swift in Sources */,
+				D768EF142360E0EF00FAE11C /* GamesViewController.swift in Sources */,
+				D768EEF4235FB02C00FAE11C /* TournamentsViewController.swift in Sources */,
+				D75E6ADA23645FFE0038BB73 /* Tournament.swift in Sources */,
+				D7551506236B85D900294992 /* User.swift in Sources */,
+				D768EF172360E7CE00FAE11C /* EventsViewController.swift in Sources */,
+				D75E6ADC236460990038BB73 /* LineService.swift in Sources */,
+				D755150D236CA87A00294992 /* PreparatioPresenter.swift in Sources */,
+				D75514F12364EB4000294992 /* EventOptionCell.swift in Sources */,
+				D70A4CA82363B375003762EA /* BaseAPI.swift in Sources */,
+				D75514F8236B7DDF00294992 /* ArrayExtensions.swift in Sources */,
+				D70A4CAA2363B41F003762EA /* LineAPI.swift in Sources */,
+				D768EF05235FB1BA00FAE11C /* Bet.swift in Sources */,
+				D768EEF2235FB02C00FAE11C /* AppDelegate.swift in Sources */,
+				D75514ED2364E73D00294992 /* Event.swift in Sources */,
+				D7551511236CA91400294992 /* UsersAPI.swift in Sources */,
+				D7B5C226236CD963005F1A42 /* KeychainService.swift in Sources */,
+				D75514E923648DFA00294992 /* GameInfo.swift in Sources */,
+				D7B5C222236CC99A005F1A42 /* LoginViewController.swift in Sources */,
+				D75514FC236B7E4D00294992 /* StringExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D768EEF5235FB02C00FAE11C /* Line.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D768EEF6235FB02C00FAE11C /* Base */,
+			);
+			name = Line.storyboard;
+			sourceTree = "<group>";
+		};
+		D768EEFA235FB02F00FAE11C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D768EEFB235FB02F00FAE11C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D768EEFE235FB02F00FAE11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D768EEFF235FB02F00FAE11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D768EF01235FB02F00FAE11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3229A2135E1683358FEF591 /* Pods-CHGKBet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G9HA2TH7V;
+				INFOPLIST_FILE = CHGKBet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thepsych0.CHGKBet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D768EF02235FB02F00FAE11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB24561E063D269E40B10BA /* Pods-CHGKBet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G9HA2TH7V;
+				INFOPLIST_FILE = CHGKBet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thepsych0.CHGKBet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D768EEE9235FB02C00FAE11C /* Build configuration list for PBXProject "CHGKBet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D768EEFE235FB02F00FAE11C /* Debug */,
+				D768EEFF235FB02F00FAE11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D768EF00235FB02F00FAE11C /* Build configuration list for PBXNativeTarget "CHGKBet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D768EF01235FB02F00FAE11C /* Debug */,
+				D768EF02235FB02F00FAE11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D768EEE6235FB02C00FAE11C /* Project object */;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6EF-MF-0tf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uLy-ZT-eFB">
+            <objects>
+                <navigationController id="6EF-MF-0tf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Seb-Cf-YSQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ocZ-ry-u1E" kind="relationship" relationship="rootViewController" id="TbS-Jt-D1a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoY-a6-6rt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="-216"/>
+        </scene>
+        <!--Вход-->
+        <scene sceneID="qhZ-fX-44u">
+            <objects>
+                <viewController id="ocZ-ry-u1E" customClass="LoginViewController" customModule="CHGKBet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFu-gk-G9z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSI-SS-wkJ">
+                                <rect key="frame" x="69" y="327" width="276" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjf-cy-Pvt">
+                                <rect key="frame" x="69" y="381" width="276" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGa-Zs-mzL">
+                                <rect key="frame" x="107" y="455" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GE9-jq-ely"/>
+                                    <constraint firstAttribute="height" constant="40" id="NDw-YO-FFn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Поставить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="ocZ-ry-u1E" eventType="touchUpInside" id="HHO-bU-v6L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hjf-cy-Pvt" firstAttribute="trailing" secondItem="RSI-SS-wkJ" secondAttribute="trailing" id="2hS-Ij-4Xb"/>
+                            <constraint firstItem="hjf-cy-Pvt" firstAttribute="top" secondItem="RSI-SS-wkJ" secondAttribute="bottom" constant="20" id="5a7-pw-pvt"/>
+                            <constraint firstItem="RSI-SS-wkJ" firstAttribute="width" secondItem="pAQ-Sf-AsM" secondAttribute="width" multiplier="2/3" id="Jkb-Wd-NXo"/>
+                            <constraint firstItem="fGa-Zs-mzL" firstAttribute="centerY" secondItem="pAQ-Sf-AsM" secondAttribute="centerY" id="PcP-OF-sN5"/>
+                            <constraint firstItem="fGa-Zs-mzL" firstAttribute="centerX" secondItem="hjf-cy-Pvt" secondAttribute="centerX" id="UfP-yL-i9s"/>
+                            <constraint firstItem="hjf-cy-Pvt" firstAttribute="leading" secondItem="RSI-SS-wkJ" secondAttribute="leading" id="XNl-tv-BwD"/>
+                            <constraint firstItem="fGa-Zs-mzL" firstAttribute="top" secondItem="hjf-cy-Pvt" secondAttribute="bottom" constant="40" id="iww-5N-Lq2"/>
+                            <constraint firstItem="RSI-SS-wkJ" firstAttribute="centerX" secondItem="pAQ-Sf-AsM" secondAttribute="centerX" id="yBt-Mg-YGW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pAQ-Sf-AsM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вход" id="GFw-cs-yWG"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="RSI-SS-wkJ" id="nph-MW-5cf"/>
+                        <outlet property="loginButton" destination="fGa-Zs-mzL" id="q8S-hA-MVY"/>
+                        <outlet property="passwordTextField" destination="hjf-cy-Pvt" id="cIZ-BE-3JU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJ5-qZ-qAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="-216"/>
+        </scene>
+    </scenes>
+</document>
