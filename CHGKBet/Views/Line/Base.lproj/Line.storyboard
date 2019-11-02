@@ -55,22 +55,11 @@
                         <segue destination="EKS-uc-bOe" kind="relationship" relationship="viewControllers" id="q86-WX-DI8"/>
                         <segue destination="nEZ-Ul-tti" kind="relationship" relationship="viewControllers" id="bFW-EK-29Z"/>
                         <segue destination="eQL-BY-2SN" kind="relationship" relationship="viewControllers" id="7R4-vi-1c7"/>
-                        <segue destination="ee3-CG-3eq" kind="relationship" relationship="viewControllers" id="dcg-Pe-Plk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGk-b0-gzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1783" y="138"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="uBw-p7-Cpw">
-            <objects>
-                <viewControllerPlaceholder id="ee3-CG-3eq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="UYq-l2-r8b"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UZc-wV-wNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1918" y="639"/>
         </scene>
         <!--События-->
         <scene sceneID="VaO-zi-QTo">
@@ -210,6 +199,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ItM-cf-nmR">
+                                <rect key="frame" x="40" y="104" width="334" height="280"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accepted" translatesAutoresizingMaskIntoConstraints="NO" id="hnX-4J-LQI">
+                                        <rect key="frame" x="107" y="15" width="120" height="120"/>
+                                        <color key="tintColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hnX-4J-LQI" secondAttribute="height" multiplier="1:1" id="6Ib-4a-3bY"/>
+                                            <constraint firstAttribute="width" constant="120" id="Qju-uc-VHy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша ставка принята!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHm-57-iPQ">
+                                        <rect key="frame" x="77.5" y="143" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информацию о ставке можно проверить в разделе &quot;Аккаунт&quot; -&gt; &quot;История ставок&quot;." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKv-yd-V39">
+                                        <rect key="frame" x="15" y="167.5" width="304" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHo-eu-JS2">
+                                        <rect key="frame" x="107" y="235" width="120" height="30"/>
+                                        <color key="backgroundColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0P0-I9-hhF"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="euD-Pu-x9m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Продолжить">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="finish" destination="xO1-NC-AG9" eventType="touchUpInside" id="ykx-vK-dcH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="tHm-57-iPQ" firstAttribute="centerX" secondItem="hnX-4J-LQI" secondAttribute="centerX" id="00P-ct-cXr"/>
+                                    <constraint firstItem="hnX-4J-LQI" firstAttribute="top" secondItem="ItM-cf-nmR" secondAttribute="top" constant="15" id="63g-6P-yYQ"/>
+                                    <constraint firstItem="FHo-eu-JS2" firstAttribute="centerX" secondItem="ItM-cf-nmR" secondAttribute="centerX" id="MjT-gr-5yX"/>
+                                    <constraint firstItem="BKv-yd-V39" firstAttribute="top" secondItem="tHm-57-iPQ" secondAttribute="bottom" constant="4" id="NLA-SG-sFD"/>
+                                    <constraint firstItem="hnX-4J-LQI" firstAttribute="centerX" secondItem="ItM-cf-nmR" secondAttribute="centerX" id="UQx-m0-rXC"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHo-eu-JS2" secondAttribute="bottom" constant="15" id="Vg5-2s-yBZ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BKv-yd-V39" secondAttribute="trailing" constant="15" id="fMV-6L-M8P"/>
+                                    <constraint firstItem="BKv-yd-V39" firstAttribute="leading" secondItem="ItM-cf-nmR" secondAttribute="leading" constant="15" id="mTy-pR-8M7"/>
+                                    <constraint firstItem="tHm-57-iPQ" firstAttribute="top" secondItem="hnX-4J-LQI" secondAttribute="bottom" constant="8" id="urR-Sp-rGV"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZP-0J-5MW">
                                 <rect key="frame" x="40" y="104" width="334" height="280"/>
                                 <subviews>
@@ -338,18 +379,25 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xZP-0J-5MW" firstAttribute="top" secondItem="hu1-Zy-HgQ" secondAttribute="top" constant="60" id="9yZ-gb-1Bd"/>
+                            <constraint firstItem="ItM-cf-nmR" firstAttribute="centerY" secondItem="xZP-0J-5MW" secondAttribute="centerY" id="KY3-al-BRI"/>
+                            <constraint firstItem="ItM-cf-nmR" firstAttribute="width" secondItem="xZP-0J-5MW" secondAttribute="width" id="WLO-QJ-c4D"/>
+                            <constraint firstItem="ItM-cf-nmR" firstAttribute="height" secondItem="xZP-0J-5MW" secondAttribute="height" id="aKD-66-Cwq"/>
                             <constraint firstItem="hu1-Zy-HgQ" firstAttribute="trailing" secondItem="xZP-0J-5MW" secondAttribute="trailing" constant="40" id="mW2-sm-wTR"/>
                             <constraint firstItem="xZP-0J-5MW" firstAttribute="leading" secondItem="hu1-Zy-HgQ" secondAttribute="leading" constant="40" id="syr-QJ-Bcj"/>
+                            <constraint firstItem="ItM-cf-nmR" firstAttribute="centerX" secondItem="xZP-0J-5MW" secondAttribute="centerX" id="zsx-cZ-RGU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hu1-Zy-HgQ"/>
                     </view>
                     <connections>
+                        <outlet property="acceptedImageView" destination="hnX-4J-LQI" id="uRO-x9-kWY"/>
+                        <outlet property="acceptedView" destination="ItM-cf-nmR" id="lrG-HD-rtA"/>
                         <outlet property="betAmountTextField" destination="L8N-3A-KJv" id="gy2-YN-Ppl"/>
                         <outlet property="betInfoView" destination="xZP-0J-5MW" id="hON-UK-l89"/>
                         <outlet property="betLabel" destination="c3T-yO-1NW" id="i88-dD-NOW"/>
                         <outlet property="cancelBetButton" destination="pGW-wI-v5R" id="4On-9c-co6"/>
                         <outlet property="coefficientLabel" destination="ePq-0c-kfX" id="Alq-3G-NLz"/>
                         <outlet property="confirmBetButton" destination="hX7-gM-tAG" id="Uah-Xu-gjW"/>
+                        <outlet property="finishButton" destination="FHo-eu-JS2" id="Tgn-fZ-ThH"/>
                         <outlet property="possiblePayoutLabel" destination="l0P-5P-vAV" id="pXs-eo-bIn"/>
                         <outlet property="totalLabel" destination="O8h-7P-1dd" id="KSN-cb-4Qa"/>
                     </connections>
@@ -360,6 +408,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="accepted" width="120" height="120"/>
         <image name="event" width="24" height="24"/>
         <image name="pedestal" width="24" height="24"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>

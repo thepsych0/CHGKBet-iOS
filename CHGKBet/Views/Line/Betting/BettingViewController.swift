@@ -11,6 +11,10 @@ class BettingViewController: UIViewController {
     @IBOutlet weak var coefficientLabel: UILabel!
     @IBOutlet weak var possiblePayoutLabel: UILabel!
     
+    @IBOutlet weak var acceptedView: UIView!
+    @IBOutlet weak var acceptedImageView: UIImageView!
+    @IBOutlet weak var finishButton: UIButton!
+    
     var presenter: LinePresenter?
     var bet: Bet? {
         didSet {
@@ -64,11 +68,15 @@ class BettingViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         betInfoView.layer.cornerRadius = 12
         confirmBetButton.layer.cornerRadius = 8
         cancelBetButton.layer.cornerRadius = 8
         cancelBetButton.layer.borderWidth = 1
         cancelBetButton.layer.borderColor = UIColor.darkGray.cgColor
+        
+        acceptedView.layer.cornerRadius = 12
+        finishButton.layer.cornerRadius = 12
     }
     
     @IBAction func cancel() {
@@ -81,6 +89,10 @@ class BettingViewController: UIViewController {
         presenter?.makeBet(bet)
     }
     
+    @IBAction func finish() {
+        hide()
+    }
+    
     @objc func hide() {
         dismiss(animated: true, completion: nil)
     }
@@ -90,6 +102,11 @@ class BettingViewController: UIViewController {
         betAmountTextField.text?.removeZeroes()
         confirmBetButton.enableWithUI(!text.isEmpty && text.doubleValue > 0)
         possiblePayoutLabel.text = String(text.doubleValue * coef)
+    }
+    
+    func showAcceptedView() {
+        betInfoView.isHidden = true
+        acceptedView.isHidden = false
     }
 }
 

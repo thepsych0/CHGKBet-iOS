@@ -60,9 +60,11 @@ class LinePresenter {
     func makeBet(_ bet: Bet) {
         service.makeBet(bet: bet)
             .subsribe { [weak self] success in
-                guard let self = self else { return }
+                guard let self = self, let success = success else { return }
                 
-                print(success)
+                if success {
+                    self.bettingViewController?.showAcceptedView()
+                }
             }
             .disposed(by: disposeBag)
     }
