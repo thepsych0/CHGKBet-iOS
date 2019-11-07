@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E72-u8-9H2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mbu-eR-W9k">
+            <objects>
+                <navigationController id="E72-u8-9H2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Uc-MK-PB0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aDY-6h-eT0" kind="relationship" relationship="rootViewController" id="aT6-kG-gYa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzU-aj-tXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909" y="98"/>
+        </scene>
+        <!--Аккаунт и настройки-->
+        <scene sceneID="SU2-sN-np4">
+            <objects>
+                <viewController id="aDY-6h-eT0" customClass="AccountViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wmp-iH-HSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_circled" translatesAutoresizingMaskIntoConstraints="NO" id="HAZ-Z9-109">
+                                <rect key="frame" x="97" y="103" width="220" height="220"/>
+                                <color key="tintColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HAZ-Z9-109" secondAttribute="height" multiplier="1:1" id="4lg-eA-TFz"/>
+                                    <constraint firstAttribute="width" constant="220" id="ujL-WS-e4c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-Z6-GXF">
+                                <rect key="frame" x="207" y="331" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Me0-3l-BPk">
+                                <rect key="frame" x="0.0" y="361" width="414" height="452"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aDY-6h-eT0" id="dbt-uK-4OO"/>
+                                    <outlet property="delegate" destination="aDY-6h-eT0" id="7OY-1g-xZh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gJ2-Z6-GXF" firstAttribute="centerX" secondItem="HAZ-Z9-109" secondAttribute="centerX" id="6hP-ng-zEp"/>
+                            <constraint firstItem="Me0-3l-BPk" firstAttribute="top" secondItem="gJ2-Z6-GXF" secondAttribute="bottom" constant="30" id="BEF-WD-nGq"/>
+                            <constraint firstItem="HAZ-Z9-109" firstAttribute="centerX" secondItem="592-Zk-gEn" secondAttribute="centerX" id="Oee-16-qKJ"/>
+                            <constraint firstItem="gJ2-Z6-GXF" firstAttribute="top" secondItem="HAZ-Z9-109" secondAttribute="bottom" constant="8" id="Qfs-hE-5iE"/>
+                            <constraint firstItem="Me0-3l-BPk" firstAttribute="leading" secondItem="592-Zk-gEn" secondAttribute="leading" id="XYg-SJ-I7w"/>
+                            <constraint firstItem="592-Zk-gEn" firstAttribute="bottom" secondItem="Me0-3l-BPk" secondAttribute="bottom" id="chQ-00-AZE"/>
+                            <constraint firstItem="592-Zk-gEn" firstAttribute="trailing" secondItem="Me0-3l-BPk" secondAttribute="trailing" id="h8w-kV-bWf"/>
+                            <constraint firstItem="HAZ-Z9-109" firstAttribute="top" secondItem="592-Zk-gEn" secondAttribute="top" constant="15" id="tfC-hP-Ddx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="592-Zk-gEn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Аккаунт" image="user" id="qkd-Jt-JWc"/>
+                    <navigationItem key="navigationItem" title="Аккаунт и настройки" id="w2j-Fu-UWu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="gJ2-Z6-GXF" id="eVg-3M-OWS"/>
+                        <outlet property="tableView" destination="Me0-3l-BPk" id="Txn-6u-hMf"/>
+                        <segue destination="lnn-ee-QOX" kind="show" id="Fsy-YI-Csk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhe-F0-8kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="98.4375"/>
+        </scene>
+        <!--История ставок-->
+        <scene sceneID="hha-Nw-EiG">
+            <objects>
+                <viewController storyboardIdentifier="BetsHistoryViewController" id="lnn-ee-QOX" customClass="BetsHistoryViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JeJ-YC-dty">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0rz-lU-MMF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lnn-ee-QOX" id="Mng-uK-uuT"/>
+                                    <outlet property="delegate" destination="lnn-ee-QOX" id="5i1-YW-fOt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0rz-lU-MMF" firstAttribute="leading" secondItem="71R-ws-72X" secondAttribute="leading" id="2LG-Nd-l4m"/>
+                            <constraint firstItem="71R-ws-72X" firstAttribute="bottom" secondItem="0rz-lU-MMF" secondAttribute="bottom" id="M26-wA-dr5"/>
+                            <constraint firstItem="71R-ws-72X" firstAttribute="trailing" secondItem="0rz-lU-MMF" secondAttribute="trailing" id="iKn-wh-Bh3"/>
+                            <constraint firstItem="0rz-lU-MMF" firstAttribute="top" secondItem="71R-ws-72X" secondAttribute="top" id="n6w-sZ-bqD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="71R-ws-72X"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="История ставок" id="UUA-RN-0nb"/>
+                    <connections>
+                        <outlet property="tableView" destination="0rz-lU-MMF" id="icq-hJ-9Ow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1w-mw-ERl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="793"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="user" width="24" height="24"/>
+        <image name="user_circled" width="240" height="240"/>
+    </resources>
+</document>

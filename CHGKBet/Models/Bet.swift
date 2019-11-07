@@ -10,7 +10,14 @@ struct Bet: Codable {
 }
 
 struct BetHistory: Codable {
-    let eventID: Int?
-    let optionTitle: String?
-    let amount: Double?
+    let id: Int?
+    let selectedOptionTitle: String
+    let amount: Double
+    let success: Bool?
+    let date: Double
+    var convertedDate: Date {
+        return Date(timeIntervalSince1970: date)
+    }
+    let tournament: Tournament
+    let event: Event
 }

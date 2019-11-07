@@ -5,7 +5,7 @@ class User {
     static var currentUser: User?
     
     static func getCredentials() -> String? {
-        return KeychainService.loadPassword(service: keychainAuthServiceName)
+        return KeychainService.loadPassword(service: KeychainService.authService)
     }
     
     var credentials: String? {
@@ -14,7 +14,7 @@ class User {
         }
         set {
             guard let credentials = newValue else { return }
-            KeychainService.savePassword(service: keychainAuthServiceName, data: credentials)
+            KeychainService.savePassword(service: KeychainService.authService, data: credentials)
         }
     }
     var info: UserInfo
@@ -27,8 +27,7 @@ class User {
 
 struct UserInfo: Codable {
     var ratingURL: String?
+    var ratingData: RatingData?
     var balance: Double
-    var betHistory: [BetHistory]
+    var bets: [BetHistory]?
 }
-
-private let keychainAuthServiceName = "CHGKBet.auth"

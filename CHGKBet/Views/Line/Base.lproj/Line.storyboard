@@ -1,45 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otP-1W-7py">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otP-1W-7py">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Рейтинг-->
-        <scene sceneID="DPb-mX-8Re">
-            <objects>
-                <viewController id="nEZ-Ul-tti" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8qc-S3-acg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="yvT-rY-FA2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Рейтинг" image="pedestal" id="KmH-HQ-3iP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tuk-fj-VMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868" y="896"/>
-        </scene>
-        <!--FAQ-->
-        <scene sceneID="9MI-2h-heX">
-            <objects>
-                <viewController id="eQL-BY-2SN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wLy-GM-ifI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ebV-YS-tgz"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="FAQ" image="questionmark.circle" catalog="system" id="eYG-bi-Vdq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cuS-IR-r3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868" y="1625"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dju-eJ-eyM">
             <objects>
@@ -53,13 +21,44 @@
                     </tabBar>
                     <connections>
                         <segue destination="EKS-uc-bOe" kind="relationship" relationship="viewControllers" id="q86-WX-DI8"/>
-                        <segue destination="nEZ-Ul-tti" kind="relationship" relationship="viewControllers" id="bFW-EK-29Z"/>
-                        <segue destination="eQL-BY-2SN" kind="relationship" relationship="viewControllers" id="7R4-vi-1c7"/>
+                        <segue destination="gTL-ZY-o3w" kind="relationship" relationship="viewControllers" id="ofr-Ho-jT6"/>
+                        <segue destination="DVB-rP-Z5b" kind="relationship" relationship="viewControllers" id="vAh-qx-3Lw"/>
+                        <segue destination="1zd-G1-yqJ" kind="relationship" relationship="viewControllers" id="NB0-Ee-a5L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGk-b0-gzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1783" y="138"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="dhr-iq-3ZM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="1zd-G1-yqJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Test" id="4T5-zY-CJv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9r-hK-UVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1386" y="562"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="iMp-zM-wUS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FAQ" id="DVB-rP-Z5b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cn3-u7-OiL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ZK-Ab-JLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1797" y="562"/>
+        </scene>
+        <!--TopPlayers-->
+        <scene sceneID="LDx-ip-UHz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TopPlayers" id="gTL-ZY-o3w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fs9-ye-Ukn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRU-xN-SIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2243" y="562"/>
         </scene>
         <!--События-->
         <scene sceneID="VaO-zi-QTo">
@@ -86,7 +85,7 @@
         <!--Турниры-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TournamentsViewController" customModule="CHGKBet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TournamentsViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +121,7 @@
         <!--Игры-->
         <scene sceneID="O1r-Lc-wY1">
             <objects>
-                <viewController storyboardIdentifier="GamesViewController" id="ue9-8N-zNp" customClass="GamesViewController" customModule="CHGKBet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamesViewController" id="ue9-8N-zNp" customClass="GamesViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0d3-z1-pDx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +157,7 @@
         <!--EventsViewController-->
         <scene sceneID="CNc-V9-Zvv">
             <objects>
-                <viewController storyboardIdentifier="EventsViewController" title="EventsViewController" id="8N7-rL-g7f" customClass="EventsViewController" customModule="CHGKBet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventsViewController" title="EventsViewController" id="8N7-rL-g7f" customClass="EventsViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J5K-S9-pBk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +193,7 @@
         <!--Betting View Controller-->
         <scene sceneID="ZGK-Dw-pRa">
             <objects>
-                <viewController storyboardIdentifier="BettingViewController" id="xO1-NC-AG9" customClass="BettingViewController" customModule="CHGKBet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BettingViewController" id="xO1-NC-AG9" customClass="BettingViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ian-HQ-Yld">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,9 +260,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGW-wI-v5R">
-                                        <rect key="frame" x="30" y="230" width="100" height="30"/>
+                                        <rect key="frame" x="15" y="230" width="120" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="50F-4z-YTj"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="50F-4z-YTj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Отменить">
@@ -274,10 +273,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX7-gM-tAG">
-                                        <rect key="frame" x="204" y="230" width="100" height="30"/>
+                                        <rect key="frame" x="199" y="230" width="120" height="30"/>
                                         <color key="backgroundColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Qxt-4z-Pgj"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Qxt-4z-Pgj"/>
                                             <constraint firstAttribute="height" constant="30" id="ZCV-9a-ros"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -351,9 +350,9 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="hX7-gM-tAG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pGW-wI-v5R" secondAttribute="trailing" constant="8" symbolic="YES" id="1qC-JO-7Ss"/>
-                                    <constraint firstItem="pGW-wI-v5R" firstAttribute="leading" secondItem="xZP-0J-5MW" secondAttribute="leading" constant="30" id="4ff-Up-FRP"/>
+                                    <constraint firstItem="pGW-wI-v5R" firstAttribute="leading" secondItem="xZP-0J-5MW" secondAttribute="leading" constant="15" id="4ff-Up-FRP"/>
                                     <constraint firstItem="4L5-ww-7i7" firstAttribute="centerY" secondItem="xZP-0J-5MW" secondAttribute="centerY" id="5C0-fy-Y4h"/>
-                                    <constraint firstAttribute="trailing" secondItem="hX7-gM-tAG" secondAttribute="trailing" constant="30" id="91h-hn-af9"/>
+                                    <constraint firstAttribute="trailing" secondItem="hX7-gM-tAG" secondAttribute="trailing" constant="15" id="91h-hn-af9"/>
                                     <constraint firstItem="4L5-ww-7i7" firstAttribute="leading" secondItem="xZP-0J-5MW" secondAttribute="leading" constant="15" id="CYw-eo-NDg"/>
                                     <constraint firstItem="l0P-5P-vAV" firstAttribute="centerY" secondItem="R1m-ma-OQ1" secondAttribute="centerY" id="CnN-GU-Fq9"/>
                                     <constraint firstItem="l0P-5P-vAV" firstAttribute="trailing" secondItem="O8h-7P-1dd" secondAttribute="trailing" id="NfA-sG-z98"/>
@@ -410,7 +409,5 @@
     <resources>
         <image name="accepted" width="120" height="120"/>
         <image name="event" width="24" height="24"/>
-        <image name="pedestal" width="24" height="24"/>
-        <image name="questionmark.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

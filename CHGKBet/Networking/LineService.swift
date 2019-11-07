@@ -60,19 +60,20 @@ class LineService {
         return events
     }
     
-    func makeBet(bet: Bet) -> BehavoirRelay<Bool?> {
-        let success: BehavoirRelay<Bool?> = BehavoirRelay(defaultValue: nil)
+    func makeBet(bet: Bet) -> BehavoirRelay<UserInfo?> {
+        let newUserInfo: BehavoirRelay<UserInfo?> = BehavoirRelay(defaultValue: nil)
         
         provider.rx.request(.makeBet(bet: bet)).subscribe(
             onSuccess: { response in
-                success.accept(response.statusCode.isValidStatusCode)
+                let userInfoValue = try? self.decoder.decode(UserInfo.self, from: response.data)
+                newUserInfo.accept(userInfoValue)
             },
             onError: { error in
-                success.accept(false)
+                print(error)
             }
         )
         .disposed(by: disposeBag)
         
-        return success
+        return newUserInfo
     }
 }

@@ -11,6 +11,8 @@ let kSecReturnDataValue = NSString(format: kSecReturnData)
 let kSecMatchLimitOneValue = NSString(format: kSecMatchLimitOne)
 
 public class KeychainService: NSObject {
+
+    static let authService = "CHGKBet.auth"
     
     class func updatePassword(service: String, account: String, data: String) {
         if let dataFromString: Data = data.data(using: .utf8, allowLossyConversion: false) {
@@ -29,7 +31,7 @@ public class KeychainService: NSObject {
     }
     
     
-    class func removePassword(service: String, account:String) {
+    class func removePassword(service: String, account: String = "main") {
         
         // Instantiate a new default keychain query
         let keychainQuery: NSMutableDictionary = NSMutableDictionary(objects: [kSecClassGenericPasswordValue, service, account, kCFBooleanTrue as Any], forKeys: [kSecClassValue, kSecAttrServiceValue, kSecAttrAccountValue, kSecReturnDataValue])

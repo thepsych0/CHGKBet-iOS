@@ -59,12 +59,10 @@ class LinePresenter {
     
     func makeBet(_ bet: Bet) {
         service.makeBet(bet: bet)
-            .subsribe { [weak self] success in
-                guard let self = self, let success = success else { return }
-                
-                if success {
-                    self.bettingViewController?.showAcceptedView()
-                }
+            .subsribe { [weak self] userInfo in
+                guard let self = self, let userInfo = userInfo else { return }
+                User.currentUser?.info = userInfo
+                self.bettingViewController?.showAcceptedView()
             }
             .disposed(by: disposeBag)
     }
@@ -84,6 +82,7 @@ class LinePresenter {
         selectedGame = game
         if let vc = storyboard?.instantiateViewController(withIdentifier: "EventsViewController") as? EventsViewController {
             vc.presenter = self
+            vc.title = game.title
             eventsViewController = vc
             navigationController?.pushViewController(vc, animated: true)
         }

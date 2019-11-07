@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T94-m2-Bxw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="J0R-vw-H6n">
+            <objects>
+                <navigationController id="T94-m2-Bxw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h2Y-Bj-hjD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.50980392159999999" green="0.65098039220000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jgc-uv-d6a" kind="relationship" relationship="rootViewController" id="G8o-eU-nLb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2V-eC-Pj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710" y="-194"/>
+        </scene>
+        <!--Разделы-->
+        <scene sceneID="kOf-jj-t5C">
+            <objects>
+                <viewController id="Jgc-uv-d6a" customClass="FAQSectionsViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Loo-Jt-5OW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1n8-TC-yNP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jgc-uv-d6a" id="AEJ-dg-XwI"/>
+                                    <outlet property="delegate" destination="Jgc-uv-d6a" id="etW-40-H4a"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1n8-TC-yNP" firstAttribute="top" secondItem="MZh-xN-ypn" secondAttribute="top" id="f41-SV-MXW"/>
+                            <constraint firstItem="MZh-xN-ypn" firstAttribute="trailing" secondItem="1n8-TC-yNP" secondAttribute="trailing" id="k0A-QX-hSf"/>
+                            <constraint firstItem="MZh-xN-ypn" firstAttribute="bottom" secondItem="1n8-TC-yNP" secondAttribute="bottom" id="tFX-Kn-cpI"/>
+                            <constraint firstItem="1n8-TC-yNP" firstAttribute="leading" secondItem="MZh-xN-ypn" secondAttribute="leading" id="z7y-hv-4e7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MZh-xN-ypn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="question" id="atp-uK-4eo"/>
+                    <navigationItem key="navigationItem" title="Разделы" id="Mfo-zM-HKl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="1n8-TC-yNP" id="rxf-aX-Fs2"/>
+                        <segue destination="UMJ-G9-Wdy" kind="show" id="gSc-8G-Mvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUE-rG-2vz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="-193"/>
+        </scene>
+        <!--Вопросы и ответы-->
+        <scene sceneID="irz-vA-hfh">
+            <objects>
+                <viewController storyboardIdentifier="FAQQuestionsViewController" id="UMJ-G9-Wdy" customClass="FAQQuestionsViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xl0-nj-t9K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3f2-Aa-BVt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UMJ-G9-Wdy" id="kXX-PH-8h0"/>
+                                    <outlet property="delegate" destination="UMJ-G9-Wdy" id="74A-IL-bPN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RwP-gy-rI4" firstAttribute="trailing" secondItem="3f2-Aa-BVt" secondAttribute="trailing" id="WOd-Fz-4my"/>
+                            <constraint firstItem="3f2-Aa-BVt" firstAttribute="top" secondItem="RwP-gy-rI4" secondAttribute="top" id="k6V-16-hNz"/>
+                            <constraint firstItem="3f2-Aa-BVt" firstAttribute="leading" secondItem="RwP-gy-rI4" secondAttribute="leading" id="rNO-VH-VsK"/>
+                            <constraint firstItem="RwP-gy-rI4" firstAttribute="bottom" secondItem="3f2-Aa-BVt" secondAttribute="bottom" id="y5P-B0-g6X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RwP-gy-rI4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопросы и ответы" id="Vdt-zZ-BlE"/>
+                    <connections>
+                        <outlet property="tableView" destination="3f2-Aa-BVt" id="hR5-5h-Vi9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fs-je-q89" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="-194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question" width="24" height="24"/>
+    </resources>
+</document>

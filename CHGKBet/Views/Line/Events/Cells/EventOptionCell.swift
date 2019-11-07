@@ -13,7 +13,7 @@ class EventOptionCell: UITableViewCell {
     func updateUI() {
         titleLabel.text = eventOption?.title
         if let coef = eventOption?.coef {
-            coefLabel.text = String(coef)
+            coefLabel.text = String(format: "%.2f", coef)
         }
     }
 }

@@ -51,8 +51,8 @@ class BettingViewController: UIViewController {
         guard let bet = bet else { return }
         
         configureBetLabel(bet: bet)
-        coefficientLabel.text = String(bet.selectedOption.coef ?? 0)
-        totalLabel.text = String(totalAmount ?? 0)
+        coefficientLabel.text = String(format: "%.2f", bet.selectedOption.coef ?? 0)
+        totalLabel.text = String(format: "%.2f", totalAmount ?? 0)
     }
     
     private func configureBetLabel(bet: Bet) {
@@ -101,7 +101,7 @@ class BettingViewController: UIViewController {
         guard let text = betAmountTextField.text, let bet = bet, let coef = bet.selectedOption.coef else { return }
         betAmountTextField.text?.removeZeroes()
         confirmBetButton.enableWithUI(!text.isEmpty && text.doubleValue > 0)
-        possiblePayoutLabel.text = String(text.doubleValue * coef)
+        possiblePayoutLabel.text = String(format: "%.2f", text.doubleValue * coef)
     }
     
     func showAcceptedView() {

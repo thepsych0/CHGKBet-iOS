@@ -1,11 +1,3 @@
-//
-//  Tournament.swift
-//  CHGKBet
-//
-//  Created by ThePsych0 on 26.10.2019.
-//  Copyright © 2019 thepsych0. All rights reserved.
-//
-
 import UIKit
 
 struct Tournament: Codable {

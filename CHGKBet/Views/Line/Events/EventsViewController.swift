@@ -52,26 +52,26 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
         headerView.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
         
         let label = UILabel()
-        label.numberOfLines = 2
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = events[section].title
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .darkGray
-        
+
         headerView.addSubview(label)
         NSLayoutConstraint.activate(
             [
                 label.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
                 label.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15),
-                label.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: 15)
+                label.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -15)
             ]
         )
-        
+
         return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 70
     }
 }
 
