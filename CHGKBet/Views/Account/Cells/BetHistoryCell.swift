@@ -29,5 +29,11 @@ class BetHistoryCell: UITableViewCell {
 
         let optionCoef = bet.event.options.first { $0.title == bet.selectedOptionTitle }?.coef ?? 0
         possiblePayoutLabel.text = String(format: "%.2f", bet.amount * optionCoef)
+
+        if let success = bet.success {
+            possiblePayoutLabel.textColor = success ? .appGreen : .appRed
+        } else {
+            possiblePayoutLabel.textColor = .darkGray
+        }
     }
 }

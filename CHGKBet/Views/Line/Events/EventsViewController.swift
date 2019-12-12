@@ -34,7 +34,8 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? EventOptionCell
             else { return UITableViewCell() }
-        cell.eventOption = events[indexPath.section].options[indexPath.row]
+        let eventOption = events[indexPath.section].options[indexPath.row]
+        cell.model = EventOptionCellModel(eventOption: eventOption, isAvailable: events[indexPath.section].isAvailable)
         return cell
     }
     
@@ -44,6 +45,7 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard events[indexPath.section].isAvailable else { return }
         presenter?.goToBetting(bet: Bet(event: events[indexPath.section], selectedOptionIndex: indexPath.row))
     }
     

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BIg-gG-C99">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Insufficient Version View Controller-->
+        <scene sceneID="GyU-a7-817">
+            <objects>
+                <viewController id="BIg-gG-C99" customClass="InsufficientVersionViewController" customModule="ЧГК_тотализатор" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPe-me-0qw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De8-jY-kTb">
+                                <rect key="frame" x="0.0" y="303" width="414" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJV-LM-T27">
+                                        <rect key="frame" x="87" y="240" width="240" height="60"/>
+                                        <color key="backgroundColor" red="0.51027397259999996" green="0.65224417889999997" blue="0.93487799660000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fNx-fa-ztr"/>
+                                            <constraint firstAttribute="width" constant="240" id="uFP-NB-IxB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <state key="normal" title="Обновить">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="update" destination="BIg-gG-C99" eventType="touchUpInside" id="v9U-LM-LDA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="MyY-V5-NPp"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJV-LM-T27" secondAttribute="bottom" id="TO3-Ak-Nc6"/>
+                                    <constraint firstItem="CJV-LM-T27" firstAttribute="centerX" secondItem="De8-jY-kTb" secondAttribute="centerX" id="VsI-me-BSs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-eV-jDo">
+                                <rect key="frame" x="20" y="303" width="374" height="150.5"/>
+                                <string key="text">К сожалению, ваша версия приложения устарела и больше  не поддерживается. Чтобы продолжить пользоваться приложением, его необходимо обновить</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Необходимо обновить приложение" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBN-zH-zny">
+                                <rect key="frame" x="15" y="84" width="384" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="De8-jY-kTb" firstAttribute="centerY" secondItem="X0F-4I-bgw" secondAttribute="centerY" id="BSM-97-rIk"/>
+                            <constraint firstItem="mBN-zH-zny" firstAttribute="top" secondItem="X0F-4I-bgw" secondAttribute="top" constant="40" id="Tf3-wQ-UnH"/>
+                            <constraint firstItem="X0F-4I-bgw" firstAttribute="leading" secondItem="mBN-zH-zny" secondAttribute="leading" constant="-15" id="Xx0-Rb-3uV"/>
+                            <constraint firstItem="c8a-eV-jDo" firstAttribute="trailing" secondItem="De8-jY-kTb" secondAttribute="trailing" constant="-20" id="Zt6-pf-0xL"/>
+                            <constraint firstItem="c8a-eV-jDo" firstAttribute="leading" secondItem="De8-jY-kTb" secondAttribute="leading" constant="20" id="geL-IU-a4y"/>
+                            <constraint firstItem="mBN-zH-zny" firstAttribute="trailing" secondItem="X0F-4I-bgw" secondAttribute="trailing" constant="-15" id="nfJ-J0-FJ2"/>
+                            <constraint firstItem="De8-jY-kTb" firstAttribute="centerX" secondItem="X0F-4I-bgw" secondAttribute="centerX" id="nl3-2D-i6l"/>
+                            <constraint firstItem="De8-jY-kTb" firstAttribute="width" secondItem="pPe-me-0qw" secondAttribute="width" id="rWV-BP-rU4"/>
+                            <constraint firstItem="c8a-eV-jDo" firstAttribute="top" secondItem="De8-jY-kTb" secondAttribute="top" id="z7G-c3-akK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X0F-4I-bgw"/>
+                    </view>
+                    <connections>
+                        <outlet property="updateButton" destination="CJV-LM-T27" id="fo3-zI-Dyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wog-YS-ftZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497.10144927536237" y="-79.017857142857139"/>
+        </scene>
+    </scenes>
+</document>

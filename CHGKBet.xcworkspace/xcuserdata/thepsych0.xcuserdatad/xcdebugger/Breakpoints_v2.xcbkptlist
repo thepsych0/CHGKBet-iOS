@@ -1,229 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "E6E5F87D-5348-44A6-BA5E-13086273B28E"
+   uuid = "4C0BBB67-CBB9-44E6-A192-C47F251FEA22"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CCBCC4A4-C18D-445D-9395-E44DDECFA4A7"
+            uuid = "A91DAA99-B6FD-4C68-844A-25BCC4AE9E81"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Tournaments/TournamentsViewController.swift"
+            filePath = "CHGKBet/Networking/BaseAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "tournaments"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "baseURL"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E370535A-C3F7-4718-8060-97A9C224900E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "requestGames()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "598FA528-5090-4E65-B589-77F2BF17C7AE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "requestGames()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "52420A61-566D-4DCE-9766-9D6F1DE598D9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/LineService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "requestGamesInfo(ids:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ED4B2668-AF9D-45AD-9966-5E23F4664291"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/LineService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "requestGamesInfo(ids:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BE38DFE1-B5DA-4982-9934-5A1D546128E6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "requestTournaments()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C55BEDDA-1AA8-4239-A117-E8E571CEE5EE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "requestTournaments()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C5517903-E40A-489F-8C6B-60E16E3D2BCB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/Games/GamesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FCBAE21B-F5EF-4F62-B3A8-719593DD70DF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/LineService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "requestGamesInfo(ids:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "823FFBC8-C8D7-455E-89AB-7D6B7CF4C8DC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "goToGames(tournament:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "850DF54B-7434-4A74-B0AB-25261FA55AC7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/Tournaments/TournamentsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "090C716C-4B70-4AB1-8D29-AFECCE44259E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "requestEvents()"
-            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "090C716C-4B70-4AB1-8D29-AFECCE44259E - e9bb9bb44e4a3820"
+                  uuid = "A91DAA99-B6FD-4C68-844A-25BCC4AE9E81 - 1c2281fcce8c54f8"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;CHGKBet.Event&gt;&gt;) -&gt; () in CHGKBet.LinePresenter.requestEvents() -&gt; ()"
-                  moduleName = "CHGKBet"
+                  symbolName = "protocol witness for Moya.TargetType.baseURL.getter : Foundation.URL in conformance &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.FAQAPI : Moya.TargetType in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Views/Line/LinePresenter.swift"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/BaseAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "270">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "59">
                </Location>
                <Location
-                  uuid = "090C716C-4B70-4AB1-8D29-AFECCE44259E - 2b5666a42ac921fb"
+                  uuid = "A91DAA99-B6FD-4C68-844A-25BCC4AE9E81 - 2fd9178e3c4f5cf7"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (CHGKBet.Event, CHGKBet.Event) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;Swift.Array&lt;CHGKBet.Event&gt;&gt;) -&gt; () in CHGKBet.LinePresenter.requestEvents() -&gt; ()"
-                  moduleName = "CHGKBet"
+                  symbolName = "protocol witness for Moya.TargetType.baseURL.getter : Foundation.URL in conformance &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.LineAPI : Moya.TargetType in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Views/Line/LinePresenter.swift"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/BaseAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "85">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "A91DAA99-B6FD-4C68-844A-25BCC4AE9E81 - 5b7673e82d513cf6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "protocol witness for Moya.TargetType.baseURL.getter : Foundation.URL in conformance &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UsersAPI : Moya.TargetType in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/BaseAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "59">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -231,95 +70,271 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1F52A251-C822-45A1-B819-16D2F917C584"
+            uuid = "7DE92F7B-28C4-4D91-A07B-16EC3C21B0F5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Betting/BettingViewController.swift"
+            filePath = "CHGKBet/Networking/BaseAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "gestureRecognizerShouldBegin(_:)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "baseURL"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F94A0CEA-F07E-4AA5-B073-17B8AFE1F82B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Views/Preparation/PreparationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "checkVersion()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5FC23DF1-E75A-46BF-9853-5CC9478A0A08"
+            uuid = "6CC9F42A-6D57-4C18-9E0B-76AF18D997E6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Betting/BettingViewController.swift"
+            filePath = "CHGKBet/Views/Preparation/PreparationPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "updateUI()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "checkVersion()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CC9F42A-6D57-4C18-9E0B-76AF18D997E6 - f79953cc751af4f1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.PreparationPresenter.(checkVersion in _02A158799D9306341B11E39E83A92B86)() -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.CompletableTrait, Swift.Never&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Views/Preparation/PreparationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "6CC9F42A-6D57-4C18-9E0B-76AF18D997E6 - 31ef0d2ac2fe7a52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((RxSwift.CompletableEvent) -&gt; ()) -&gt; RxSwift.Disposable in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.PreparationPresenter.(checkVersion in _02A158799D9306341B11E39E83A92B86)() -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.CompletableTrait, Swift.Never&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Views/Preparation/PreparationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "203">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B660702-D872-4F46-BCD1-9AF305BEA825"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Views/Preparation/PreparationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "checkVersion()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7971F100-490C-499C-B485-53152195A6D3"
-            shouldBeEnabled = "Yes"
+            uuid = "0063BD65-05EC-490E-A199-CBEAA453D7F6"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/LineService.swift"
+            filePath = "CHGKBet/Networking/AppInfoService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "makeBet(bet:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "requestVersions()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "25D91BB1-76B1-48C6-9189-FFC061E310EE"
+            uuid = "B56EF58A-A09C-4CAB-BA77-6268F6E75DB4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/UsersAPI.swift"
+            filePath = "CHGKBet/Networking/AppInfoService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "requestVersions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFA1B341-CA15-422D-8418-B8CE2037C04C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Networking/AppInfoService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "requestVersions()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AFA1B341-CA15-422D-8418-B8CE2037C04C - 9f06bfb4687cf476"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "&#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.AppInfoService.requestVersions() -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.AppVersions&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/AppInfoService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "AFA1B341-CA15-422D-8418-B8CE2037C04C - 593e3cebfafc0cc6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((RxSwift.SingleEvent&lt;&#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.AppVersions&gt;) -&gt; ()) -&gt; RxSwift.Disposable in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.AppInfoService.requestVersions() -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.AppVersions&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/AppInfoService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E83315CE-42F1-46D9-9916-9395057AA3E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Networking/AppInfoAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "headers"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE80D49C-D87E-4754-B25E-47496CD7927D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Views/Preparation/PreparationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "checkVersion()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87B465CD-16E9-4DC8-BC1E-17D714FB0EDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Views/Preparation/PreparationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "checkConditions()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0432E220-E7C0-46AF-A798-9611E43C472F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Networking/UsersService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "registerUser(email:password:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "25D91BB1-76B1-48C6-9189-FFC061E310EE - d885fff320cab83b"
+                  uuid = "0432E220-E7C0-46AF-A798-9611E43C472F - 8bc741a91d429173"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CHGKBet.UsersAPI.headers.getter : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
-                  moduleName = "CHGKBet"
+                  symbolName = "&#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UsersService.registerUser(email: Swift.String, password: Swift.String) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UserInfo&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Networking/UsersAPI.swift"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/UsersService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "336">
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "61">
                </Location>
                <Location
-                  uuid = "25D91BB1-76B1-48C6-9189-FFC061E310EE - d885fff320cab83b"
+                  uuid = "0432E220-E7C0-46AF-A798-9611E43C472F - 4562b81dbc573d88"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CHGKBet.UsersAPI.headers.getter : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;"
-                  moduleName = "CHGKBet"
+                  symbolName = "closure #1 ((RxSwift.SingleEvent&lt;&#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UserInfo&gt;) -&gt; ()) -&gt; RxSwift.Disposable in &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UsersService.registerUser(email: Swift.String, password: Swift.String) -&gt; RxSwift.PrimitiveSequence&lt;RxSwift.SingleTrait, &#x427;&#x413;&#x41a;_&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;.UserInfo&gt;"
+                  moduleName = "&#x427;&#x413;&#x41a;-&#x442;&#x43e;&#x442;&#x430;&#x43b;&#x438;&#x437;&#x430;&#x442;&#x43e;&#x440;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Networking/UsersAPI.swift"
+                  urlString = "file:///Users/thepsych0/Documents/CHGKBet-iOS/CHGKBet/Networking/UsersService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "521">
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "270">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -327,256 +342,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "063ACA03-3DDC-4D06-A97C-B7DF6B6B1262"
+            uuid = "29BA26C1-E5B2-4F2C-A0C7-5C2B276338F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Networking/UsersService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "registerUser(email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93D8AF44-6782-4203-BDE7-162B98D3BBCA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CHGKBet/Networking/UsersService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "registerUser(email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B63CF8C0-B58D-43B3-A296-D3FBD0F41A79"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CHGKBet/Views/Authorization/AuthorizationPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "requestUser(email:password:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "createUser(email:password:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34F02D33-8734-4F6D-B4F2-BD831A7052DC"
+            uuid = "A91CC287-6B15-4BA4-A795-344A323AC023"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Authorization/AuthorizationPresenter.swift"
+            filePath = "CHGKBet/Networking/BaseAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "requestUser(email:password:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "makeHeaders(withAuth:withClientData:credentials:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "30C2FF98-D8A8-447B-827A-9634D7D519A9"
+            uuid = "F12A7D91-666A-4CFA-B600-EEF264A29B75"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Models/User.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "credentials"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F77FFF31-CA4D-4B01-9184-F3D3DE82DE15"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "checkUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9ED68569-9FE5-4B49-9A37-AEB33A71B107"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Preparation/PreparatioPresenter.swift"
+            filePath = "CHGKBet/Views/Line/Tournaments/Cells/TournamentCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "checkUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "87D79CE9-198B-4A3A-A1B0-6D0EBC4367D4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "checkUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1357EB14-DB01-49F1-99A2-958C06586CB2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/UsersService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "requestUserInfo(credentials:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E30DCCD-4B59-4EBC-B0D3-5DA216B0B0AD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/UsersService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "requestUserInfo(credentials:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "19FD200C-31D7-4CFC-96EA-4D01BD217E2D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Authorization/AuthorizationPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "requestUser(email:password:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "634E8657-ABB3-412C-B598-7823E04E6CFE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "checkUser()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "634E8657-ABB3-412C-B598-7823E04E6CFE - 5b12ec7496d47ad3"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Result&lt;CHGKBet.UserInfo, CHGKBet.AppError&gt;&gt;) -&gt; () in CHGKBet.PreparatioPresenter.checkUser() -&gt; ()"
-                  moduleName = "CHGKBet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "634E8657-ABB3-412C-B598-7823E04E6CFE - 5b12ec7496d47ad3"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Result&lt;CHGKBet.UserInfo, CHGKBet.AppError&gt;&gt;) -&gt; () in CHGKBet.PreparatioPresenter.checkUser() -&gt; ()"
-                  moduleName = "CHGKBet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "493">
-               </Location>
-               <Location
-                  uuid = "634E8657-ABB3-412C-B598-7823E04E6CFE - 5b12ec7496d47ad3"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Result&lt;CHGKBet.UserInfo, CHGKBet.AppError&gt;&gt;) -&gt; () in CHGKBet.PreparatioPresenter.checkUser() -&gt; ()"
-                  moduleName = "CHGKBet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thepsych0/Documents/Swift_Projects/CHGKBet/Client/CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "793">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F1FB8811-20E5-4036-A45D-9D2F88985A1B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Line/LinePresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "makeBet(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ED14D787-3FC0-453E-90B0-2353F854EAB5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Views/Preparation/PreparatioPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "checkUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1FF63C2-ECC7-407E-83BC-25FD1ED9D5AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CHGKBet/Networking/UsersService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "requestUserInfo(credentials:)"
-            landmarkType = "7">
+            landmarkName = "tournament"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

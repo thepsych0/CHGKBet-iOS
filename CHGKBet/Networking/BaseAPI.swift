@@ -10,7 +10,11 @@ public protocol BaseAPI: TargetType {
 extension BaseAPI {
 
     var baseURL: URL {
-        return URL(string: "https://chgkbet-develop.vapor.cloud/api")!
+        #if PROD
+            return URL(string: "https://chgkbet.vapor.cloud/api")!
+        #else
+            return URL(string: "https://chgkbet-develop.vapor.cloud/api")!
+        #endif
     }
     
     var sampleData: Data {
@@ -29,11 +33,17 @@ extension BaseAPI {
         return ["Content-Type": "application/json", "Accept": "application/json"]
     }
     
-    func makeHeaders(withAuth: Bool, credentials: String? = nil) -> [String: String] {
+    func makeHeaders(withAuth: Bool, withClientData: Bool = false, credentials: String? = nil) -> [String: String] {
+        let mergeClosure: (String, String) -> String = { first, second in first }
+
+        let clientInfoHeaders: [String: String] = withClientData ?
+            ["os": "iOS", "device": UIDevice.current.modelName, "version": "1.03"] :
+            [:]
+
         if !withAuth {
-            return standartHeaders
+            return standartHeaders.merging(clientInfoHeaders, uniquingKeysWith: mergeClosure)
         }
-        
+
         let loginString: String
         if let credentials = credentials {
             loginString = credentials
@@ -44,8 +54,8 @@ extension BaseAPI {
         }
         let loginData = loginString.data(using: .utf8) ?? Data()
         let base64LoginString = loginData.base64EncodedString()
-        return ["Authorization": "Basic \(base64LoginString)"].merging(standartHeaders) { first, second in
-            return first
-        }
+        return ["Authorization": "Basic \(base64LoginString)"]
+            .merging(standartHeaders, uniquingKeysWith: mergeClosure)
+            .merging(clientInfoHeaders, uniquingKeysWith: mergeClosure)
     }
 }

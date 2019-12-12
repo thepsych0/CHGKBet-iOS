@@ -43,7 +43,7 @@ extension UsersAPI: BaseAPI {
     var headers: [String : String]? {
         switch self {
         case .getMe(let credentials):
-            return makeHeaders(withAuth: true, credentials: credentials)
+            return makeHeaders(withAuth: true, withClientData: true, credentials: credentials)
         case .register, .checkRatingID:
             return makeHeaders(withAuth: false)
         case .setRatingID:

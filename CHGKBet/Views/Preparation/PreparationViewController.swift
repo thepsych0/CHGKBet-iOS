@@ -7,6 +7,6 @@ class PreparationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        preparatioPresenter.checkUser()
+        preparatioPresenter.checkConditions()
     }
 }

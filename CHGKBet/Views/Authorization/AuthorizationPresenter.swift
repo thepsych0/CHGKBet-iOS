@@ -23,37 +23,33 @@ class AuthorizationPresenter {
     // MARK: Requests
     
     func requestUser(email: String, password: String) {
-        service.requestUserInfo(email: email, password: password)
-            .subsribe { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    self.loginViewController?.showAlertWithOkAction(appError: error)
-                case .success(let userInfo):
-                    User.currentUser = User(credentials: "\(email):\(password)", info: userInfo)
-                    LinePresenter.present()
-                case .none:
-                    return
+        service.requestUserInfo(email: email, password: password).subscribe(
+            onSuccess: { userInfo in
+                User.currentUser = User(credentials: "\(email):\(password)", info: userInfo)
+                LinePresenter.present()
+            },
+            onError: { [weak self] error in
+                if let appError = error as? AppError {
+                    self?.loginViewController?.showAlertWithOkAction(appError: appError)
                 }
             }
-            .disposed(by: disposeBag)
+        )
+        .disposed(by: disposeBag)
     }
 
     func createUser(email: String, password: String) {
-        service.registerUser(email: email, password: password)
-            .subsribe { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    self.loginViewController?.showAlertWithOkAction(appError: error)
-                case .success(let userInfo):
-                    User.currentUser = User(credentials: "\(email):\(password)", info: userInfo)
-                    self.goToCheckRatingID()
-                case .none:
-                    return
+        service.registerUser(email: email, password: password).subscribe(
+            onSuccess: { [weak self] userInfo in
+                User.currentUser = User(credentials: "\(email):\(password)", info: userInfo)
+                self?.goToCheckRatingID()
+            },
+            onError: { [weak self] error in
+                if let appError = error as? AppError {
+                    self?.loginViewController?.showAlertWithOkAction(appError: appError)
                 }
             }
-            .disposed(by: disposeBag)
+        )
+        .disposed(by: disposeBag)
     }
 
     func checkRatingID(_ id: String) {
@@ -62,37 +58,35 @@ class AuthorizationPresenter {
             return
         }
         service.checkRatingID(id)
-            .subsribe { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    self.loginViewController?.showAlertWithOkAction(appError: error)
-                case .success(let ratingData):
+            .subscribe(
+                onSuccess: { [weak self] ratingData in
                     ratingData.id = id
-                    self.currentRatingData = ratingData
-                    self.goToConfirmRatingID(ratingData: ratingData)
-                case .none:
-                    return
+                    self?.currentRatingData = ratingData
+                    self?.goToConfirmRatingID(ratingData: ratingData)
+                },
+                onError: { [weak self] error in
+                    if let appError = error as? AppError {
+                        self?.loginViewController?.showAlertWithOkAction(appError: appError)
+                    }
                 }
-            }
+            )
             .disposed(by: disposeBag)
     }
 
     func confirmRatingID() {
         guard let id = currentRatingData?.id else { return }
         service.setRatingID(id)
-            .subsribe { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    self.loginViewController?.showAlertWithOkAction(appError: error)
-                case .success(let userInfo):
+            .subscribe(
+                onSuccess: { [weak self] userInfo in
                     User.currentUser?.info = userInfo
-                    self.goToFinishRegistration()
-                case .none:
-                    return
+                    self?.goToFinishRegistration()
+                },
+                onError: { [weak self] error in
+                    if let appError = error as? AppError {
+                        self?.loginViewController?.showAlertWithOkAction(appError: appError)
+                    }
                 }
-            }
+            )
             .disposed(by: disposeBag)
     }
 

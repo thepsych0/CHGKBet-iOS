@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CHGKBet.xcscheme_^#shared#^_</key>
+		<key>CHGKBet_Prod.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>CHGKBet_Test.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D768EEED235FB02C00FAE11C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

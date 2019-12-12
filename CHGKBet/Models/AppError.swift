@@ -3,6 +3,7 @@ enum AppError: Error {
     case unknown
     case passwordsDontMatch
     case invalidEmail
+    case versionLessThanMinimum
     case custom(title: String, message: String?)
 
     var title: String? {
@@ -15,6 +16,8 @@ enum AppError: Error {
             return "Введённые пароли не совпадают"
         case .invalidEmail:
             return "Не удалось валидировать email"
+        case .versionLessThanMinimum:
+            return "Версия вашего приложения устарела"
         case .custom(let title, _):
             return title
         }

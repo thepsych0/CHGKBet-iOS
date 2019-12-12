@@ -1,20 +1,20 @@
 import Moya
 
-enum TopAPI {
-    case getTopPlayers
+enum AppInfoAPI {
+    case getVersions
 }
 
-extension TopAPI: BaseAPI {
+extension AppInfoAPI: BaseAPI {
     var path: String {
         switch self {
-        case .getTopPlayers:
-            return "top"
+        case .getVersions:
+            return "get-versions"
         }
     }
 
     var method: Method {
         switch self {
-        case .getTopPlayers:
+        case .getVersions:
             return .get
         }
     }
@@ -29,7 +29,7 @@ extension TopAPI: BaseAPI {
     var headers: [String : String]? {
         switch self {
         default:
-            return makeHeaders(withAuth: true)
+            return makeHeaders(withAuth: false, withClientData: true)
         }
     }
 }

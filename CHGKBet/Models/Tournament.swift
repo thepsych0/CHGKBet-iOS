@@ -9,4 +9,6 @@ struct Tournament: Codable {
         return Date(timeIntervalSince1970: date)
     }
     let games: [String]?
+    let logoURL: String?
+    let isOver: Bool?
 }

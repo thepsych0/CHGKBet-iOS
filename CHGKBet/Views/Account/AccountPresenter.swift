@@ -6,8 +6,10 @@ class AccountPresenter {
     weak var accountViewController: AccountViewController?
 
     lazy var settings = [
+        Setting(type: .info(User.currentUser?.info.balance.stringValue()), title: "Баланс", action: nil),
         Setting(type: .navigation, title: "История ставок", action: goToBetsHistory),
         Setting(type: .info(getRatingID()), title: "ID на сайте рейтинга", action: nil),
+        Setting(type: .info(Bundle.main.version), title: "Версия приложения", action: nil),
         Setting(type: .navigation, title: "Выйти из аккаунта", titleColor: .red, action: logout)
     ]
 
